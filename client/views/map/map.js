@@ -228,6 +228,7 @@ if (Meteor.isClient) {
                 }
 
                 var infoPlace = templateMicromaniaJSON(result.place_id, result.name, result.formatted_address, result.formatted_phone_number, result.geometry);
+                alert("DEV MODE : Look at the console");
                 console.log("DEV MODE : Look at the console");
                 console.log(infoPlace);
                 // TODO : Update place into DB & set the attribut "selected" to "true"
