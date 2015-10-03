@@ -1,0 +1,12 @@
+<template name="map">
+    
+    <div id="map-canvas">
+        {{> googleMap name="micromaniaMap" options=mapOptions}}
+    </div>
+    <div id="div-flottant">
+        <ul class="control">
+            <li><button id="btnRect" class="btn btn-primary btn-block">Rectangle</button></li>
+            <li><button id="btnExport" class="btn btn-primary btn-block">Export CSV</button></li>
+        </ul>
+    </div>
+</template>

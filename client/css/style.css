@@ -1,0 +1,34 @@
+html { 
+	height: 100%;
+}
+
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+}
+
+#map-canvas { 
+    height: 100%; 
+}
+
+#div-flottant {
+	width:120px;
+	height:100px;
+	position : fixed;
+	bottom : 40px;
+	left : 10px;
+        padding: 10px;
+	background-color: white;
+	opacity:0.9;
+	border:1px dotted black;
+}
+
+ul.control > li {
+	list-style-type: none;
+        margin: 4px;
+}
+
+ul.control {
+    padding : 0px !important;
+}
