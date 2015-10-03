@@ -101,7 +101,7 @@ if (Meteor.isClient) {
                  * TODO
                  * Save each place found into DB using update / upset 
                  */
-                
+
 //                Markers.insert(place);
 
                 Meteor.subscribe('theMarkers');
@@ -228,12 +228,12 @@ if (Meteor.isClient) {
                 }
 
                 var infoPlace = templateMicromaniaJSON(result.place_id, result.name, result.formatted_address, result.formatted_phone_number, result.geometry);
+                console.log("DEV MODE : Look at the console");
                 console.log(infoPlace);
-                
                 // TODO : Update place into DB & set the attribut "selected" to "true"
             });
         }
-        
+
         // TODO : Get place using DB (Markers.find({'selected' : true}) and convert JSON to CSV
         // And update the selected to false.
 
