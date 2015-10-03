@@ -218,6 +218,9 @@ if (Meteor.isClient) {
      * @returns {undefined}
      */
     function exportToCSV() {
+        alert("DEV MODE : Look at the console");
+        console.log("DEV MODE : Look at the console");
+        
         var result_places = getPlacesFound();
         // Get extra informations of each place in the rectangle
         for (var i = 0; i < result_places.length; i++) {
@@ -228,8 +231,6 @@ if (Meteor.isClient) {
                 }
 
                 var infoPlace = templateMicromaniaJSON(result.place_id, result.name, result.formatted_address, result.formatted_phone_number, result.geometry);
-                alert("DEV MODE : Look at the console");
-                console.log("DEV MODE : Look at the console");
                 console.log(infoPlace);
                 // TODO : Update place into DB & set the attribut "selected" to "true"
             });
